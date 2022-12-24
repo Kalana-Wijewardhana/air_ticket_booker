@@ -12,7 +12,7 @@ class BottomBar extends StatefulWidget {
 }
 
 class _BottomBarState extends State<BottomBar> {
-  int _selectedIndex = 0;
+  int  _selectedIndex = 0;
 
   void _onItemTapped(int index) {
 
@@ -30,9 +30,9 @@ class _BottomBarState extends State<BottomBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("My Tickets"),
-      ),
+      // appBar: AppBar(
+      //   title: const Text("My Tickets"),
+      // ),
       body: Center(
         child: _widgetOptions[_selectedIndex],
       ),
